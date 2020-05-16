@@ -10,8 +10,7 @@ while True:
     dict={}
     for line in input_File:
         name = line.split("|")
-        dict = {name[0]: (name[1], name[2], name[3])}
-        print(dict)
-
+        dict[name[0]]=(name[1:])
+    print(dict)
 
     clientsocket.send(bytes("gvh","utf-8"))
